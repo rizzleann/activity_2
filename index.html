@@ -4,16 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width", initial-scale="1.0">
     <title>Login</title>
+    <Style>
+        #divContainer {
+            text-align: center;
+        }
+        /* pang class name */
+        .redText {
+            color: rgb(117, 129, 236);
+            background-color: #b2e0ef;
+            margin: 1rem;
+        }
+
+        /* sample ng may event */
+        .redText:hover {
+            color: rgb(0, 0, 0);
+            background-color: rgb(115, 159, 239);
+        }
+        .button:hover {
+            color:rgb(143, 221, 234);
+            background-color: green;
+        } 
+        .button {
+            color: black;
+            background-color: lavender;
+            font-size: large;
+        }
+        /*  */
+        input {
+            margin-bottom: 1rem;
+            font-size: large;
+        }
+       
+        
+    </Style>
 </head>
 
 <body>
-    <div style="text-align: center;">
+    <div id="divContainer">
         <h1>Login</h1>
-        <input type="text" placeholder="Username">
-        <input type="text" placeholder="Password">
-        <div style="margin-top: 1rem;">
-            <button id="buttonLogin">Login</button>
-        </div>
+        <input type="text" placeholder="Username" class="redText">
+       <input type="text" placeholder="Password" class="redText">
+        <div><button id="buttonLogin" class="button">Login</button></div>
     </div>
 </body>
 
@@ -24,7 +55,7 @@
     // let / var
     let btnLogin = document.querySelector("#buttonLogin");
     btnLogin.onclick = function () {
-        alert('Login has been added.')
+        alert('Login successful');
     }
 </script>
 
